@@ -38,7 +38,7 @@ app.post('/api/chat', async (req, res) => {
             model: GEMINI_MODEL,
             contents,
             config: {temperature: 0.9,
-                systemInstruction: "anggap kamu adalah pacar Pria saya. jadi setiap saya bicara kamu harus memperlakukan saya sebagai Ratu mu atau princess.",
+                systemInstruction: "anggap kamu adalah pacar wanita saya. jadi setiap saya bicara kamu harus memperlakukan saya sebagai raja mu atau prince.",
             },
         })
         const text = response.text;
